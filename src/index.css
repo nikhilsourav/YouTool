@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 :root {
     --black: #24252a;
     --white: #edf0f1;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -27,20 +25,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 ul li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 .container {
     max-width: 100%;
     margin: auto;
 }
-
 .btn {
     color: var(--white);
     padding: 9px 26px;
@@ -51,18 +45,15 @@ a {
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
 }
-
 .btn:hover {
     background-color: rgba(30, 143, 255, 0.8);
 }
 
 
 /* Start Header */
-
 header {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 15%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
-
 .header-container {
     height: 10vh;
     display: flex;
@@ -70,50 +61,50 @@ header {
     align-items: center;
     padding: 20px 10%;
 }
-
 .logo {
     cursor: pointer;
 }
-
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
 }
-
 .nav-links li a {
     color: var(--black);
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
 }
-
 .nav-links li a:hover {
     color: rgba(30, 143, 255, 1);
 }
-
-
 /* End Header */
 
 
 /* Start Home */
-
 .home {
-    height: 90vh;
-    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
-
 .home-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;    
 }
-
+.response {
+    display: none;
+    margin-top: 30px;
+    box-shadow: 3px 3px 10px -4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
 .home-content h1 {
     font-family: "Poppins";
-    font-size: 40px;
+    font-size: 45px;
     padding-left: 10px;
+    color:  rgba(30, 143, 255);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
 }
-
 .home input {
     margin-top: 10px;
     width: 400px;
@@ -125,27 +116,21 @@ header {
     transition: all 0.3s ease 0s;
     -webkit-transition: all 0.2s ease 0s;
 }
-
 .home input:focus {
     box-shadow: 0px 0px 10px rgba(30, 143, 255, 0.5);
 }
-
 .home-btn {
     margin-left: 20px;
 }
-
-
 /* End Home */
 
 
 /* Start footer */
-
 .footer {
     background-color: var(--black);
     color: var(--white);
     padding: 2vh 0;
 }
-
 .footer-container {
     max-width: 80%;
     display: flex;
@@ -154,26 +139,21 @@ header {
     margin-bottom: 2vh;
     padding: 2vh 0;
 }
-
 .footer-left,
 .footer-center,
 .footer-right {
     width: 320px;
 }
-
 .footer ul li {
     list-style: none;
 }
-
 .footer a {
     text-decoration: none;
     color: var(--white);
 }
-
 .footer h4 {
     font-family: Verdana, sans-serif;
 }
-
 .footer p,
 .footer-links,
 .footer-right li {
@@ -182,7 +162,6 @@ header {
     word-spacing: 1px;
     letter-spacing: 0.5px;
 }
-
 .footer-divider {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -192,56 +171,44 @@ header {
     outline: none;
     border: none;
 }
-
 .footer-left img {
     width: 95px;
     margin-bottom: 10px;
 }
-
 .sm-links {
     margin-top: 20px;
 }
-
 .sm-links a {
     -webkit-tap-highlight-color: transparent;
 }
-
 .sm-links i {
     font-size: 20px;
     margin-left: 10px;
     transition: transform 0.2s ease-in-out;
     -webkit-transition: transform 0.2s ease-in-out;
 }
-
 .sm-links i:hover {
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
 }
-
 .footer-center {
     padding-left: 60px;
 }
-
 .footer-center a {
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
 }
-
 .footer-center a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
-
 .footer-right i {
     margin-bottom: 13px;
     margin-right: 10px;
 }
-
 .copyright {
     width: fit-content;
     display: block;
     margin: auto;
     padding: 5px;
 }
-
-
 /* End footer */
