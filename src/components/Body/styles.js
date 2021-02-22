@@ -9,6 +9,13 @@ export default makeStyles((theme) => ({
     },
   },
   Container: {
+    height: 'max(72.5vh, 550px)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  Form: {
     padding: '25px',
     display: 'flex',
     flexWrap: 'wrap',
@@ -23,13 +30,11 @@ export default makeStyles((theme) => ({
   ButtonSubmit: {
     marginBottom: 10,
   },
-  renderDiv: {
+  progress: {
+    marginTop: '60px',
+  },
+  detailsDiv: {
     marginTop: '50px',
     padding: '25px',
-    textAlign: 'center',
-  },
-  dataItems: {
-    display: 'inline-block',
-    wordSpacing: '5px',
   },
 }));
