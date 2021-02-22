@@ -64,7 +64,6 @@ export const getDetails = async (req, res) => {
     var minutes_pattern = /(\d+)M/;
     var seconds_pattern = /(\d+)S/;
     var [hoursT, minT, secT] = [0, 0, 0];
-    var total_videos = d.length;
 
     d.map((dur) => {
       var has_hours = hours_pattern.test(dur);
@@ -94,8 +93,9 @@ export const getDetails = async (req, res) => {
     minTohour = Math.floor(minT / 60);
     hoursT += minTohour;
 
+    sendToClient.totalVideos = d.length;
     let r_data;
-    r_data = [hoursT, minR, secR, total_videos];
+    r_data = [hoursT, minR, secR];
     return r_data;
   };
 
