@@ -37,4 +37,8 @@ export default makeStyles((theme) => ({
     marginTop: '50px',
     padding: '25px',
   },
+  durationItems: {
+    display: 'inline-block',
+    marginRight: '5px',
+  },
 }));
