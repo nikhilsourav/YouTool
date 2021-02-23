@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <Paper className={classes.Navbar}>
       <Typography variant='h6' align='center'>
-        Navbar
+        YouTool
       </Typography>
     </Paper>
   );

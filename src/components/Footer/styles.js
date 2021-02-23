@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
     marginTop: theme.spacing(3),
-    backgroundColor: 'dodgerblue',
+    backgroundColor: theme.palette.primary.main,
     display: 'flex',
     justifyContent: 'center',
   },

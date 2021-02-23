@@ -27,6 +27,7 @@ const Body = () => {
 
   // btnClick
   const handleClick = async () => {
+    if (!playlistLink) return;
     setBtnClick(true);
     const { data } = await axios.get(`${url}/${playlistLink}`);
     setApiData(data);
@@ -93,7 +94,7 @@ const Body = () => {
             <Typography variant='h6' align='center'>
               Details
             </Typography>
-            Duraion :{' '}
+            Duration :{' '}
             {apiData &&
               apiData.totalDuration.map((item, index) => (
                 <div className={classes.durationItems} key={index}>
