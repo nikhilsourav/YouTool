@@ -7,8 +7,11 @@ import {
   Button,
   Container,
   CircularProgress,
+  IconButton,
+  Tooltip,
 } from '@material-ui/core';
 import useStyles from './styles';
+import ClearAllIcon from '@material-ui/icons/ClearAll';
 
 const Body = () => {
   // mui
@@ -50,10 +53,23 @@ const Body = () => {
   };
   const { width } = useWindowDimensions();
 
+  // clear Btn
+  const handleClear = () => {
+    setPlaylistLink('');
+    setBtnClick(false);
+    setApiData(null);
+  };
   return (
     <Container className={classes.Container}>
       <Paper elevation={4} className={`${classes.Form} ${classes.root}`}>
-        <Typography className={classes.Heading}>Paste your link</Typography>
+        <Container className={classes.HeadingContainer}>
+          <Typography className={classes.Heading}>Paste your link</Typography>
+          <Tooltip title='clear' placement='right'>
+            <IconButton className={classes.clearBtn} onClick={handleClear}>
+              <ClearAllIcon />
+            </IconButton>
+          </Tooltip>
+        </Container>
         <TextField
           variant='outlined'
           label='Your link here'

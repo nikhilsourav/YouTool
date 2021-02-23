@@ -27,8 +27,17 @@ export default makeStyles((theme) => ({
     fontWeight: 'bold',
     margin: '15px 0',
   },
+  HeadingContainer: {
+    position: 'relative',
+    marginBottom: '10px',
+  },
+  clearBtn: {
+    position: 'absolute',
+    right: '0',
+    top: '3px',
+  },
   ButtonSubmit: {
-    marginBottom: 10,
+    margin: '5px 0 0 0',
   },
   progress: {
     marginTop: '60px',

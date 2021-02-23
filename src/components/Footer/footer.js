@@ -13,7 +13,7 @@ import {
   Fade,
   Tooltip,
 } from '@material-ui/core';
-
+import DeveloperModeRoundedIcon from '@material-ui/icons/DeveloperModeRounded';
 // images
 import Nikhil from '../../Images/Nikhil.jpg';
 import Jitu from '../../Images/Jitu.jpeg';
@@ -165,9 +165,9 @@ const Footer = () => {
 
   return (
     <Paper className={classes.Footer}>
-      <Button variant='contained' color='primary' onClick={handleOpen}>
-        Developers
-      </Button>
+      <IconButton onClick={handleOpen}>
+        <DeveloperModeRoundedIcon />
+      </IconButton>
       <Modal open={open} onClose={handleClose}>
         {modalBody}
       </Modal>
