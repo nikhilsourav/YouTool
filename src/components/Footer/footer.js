@@ -165,9 +165,11 @@ const Footer = () => {
 
   return (
     <Paper className={classes.Footer}>
-      <IconButton onClick={handleOpen}>
-        <DeveloperModeRoundedIcon color='inherit' />
-      </IconButton>
+      <Tooltip title='Developers' placement='top'>
+        <IconButton onClick={handleOpen}>
+          <DeveloperModeRoundedIcon color='inherit' />
+        </IconButton>
+      </Tooltip>
       <Modal open={open} onClose={handleClose}>
         {modalBody}
       </Modal>

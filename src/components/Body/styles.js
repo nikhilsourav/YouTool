@@ -21,6 +21,9 @@ export default makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
+    '&:hover': {
+      border: '1px solid rgba(0,0,0,0.3)'
+    }
   },
   Heading: {
     fontSize: '20px',
