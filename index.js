@@ -15,7 +15,7 @@ app.use(cors());
 
 //routes middleware
 app.use('/api', detailsRoute);
-app.use('/', (req, res) => {
+app.use('/home', (req, res) => {
   res.send('Youtool API');
 });
 
