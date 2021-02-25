@@ -18,7 +18,7 @@ const Body = () => {
   const classes = useStyles();
 
   // baseUrl
-  const url = 'http://localhost:8080/api';
+  const url = 'https://youtool-server.herokuapp.com/api/';
 
   // states
   const [playlistLink, setPlaylistLink] = useState('');

@@ -14,6 +14,12 @@ const App = () => {
       secondary: orange,
     },
   });
+
+  console.log(
+    `%cHey there fellow developer! 👨‍💻`,
+    `font-size: 20px; background-color: #039be5; padding: 10px; border-radius: 5px`
+  );
+
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
