@@ -15,7 +15,9 @@ app.use(cors());
 
 //routes middleware
 app.use('/api', detailsRoute);
-app.use('/', (req,res)=>{res.send('Youtool API')})
+app.use('/', (req, res) => {
+  res.send('Youtool API');
+});
 
 app.listen(PORT, () => {
   console.log(`server up in port ${PORT}`);
