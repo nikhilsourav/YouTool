@@ -11,7 +11,13 @@ const PORT = process.env.PORT || 8080;
 
 //middlewares
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
+// enable all cors
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 
 //routes middleware
 app.use('/api', detailsRoute);
