@@ -1,4 +1,4 @@
-# YouTool
+# YouTool App
 
 [YouTool](https://youtool.netlify.app/) is an app where you can get details of a youtube playlist.
 
